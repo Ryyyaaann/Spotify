@@ -2,7 +2,7 @@
     padding: 0;
     margin-left: 2px;
     margin-right: 0px;
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *, *::before, *::after {
@@ -22,7 +22,7 @@
 .logo-nav,
 .div-home-bar-src,
 .info-nav-cornerr {
-    min-width: 0;   /* evita overflow forçado */
+    min-width: 0;   
 }
 
 
@@ -171,7 +171,7 @@ aside{
 
 section{
     grid-area: section;
-    background-color: #1F1F1F  ;
+    background: linear-gradient(#1F1F1F,#121212)   ;
     color: white;
     border-radius: 10px;
 }
@@ -499,6 +499,50 @@ body::-webkit-scrollbar {
     border: none;
 
 }
+
+.div-criar-podcast{
+    background-color: transparent;
+    border-radius: 10px;
+    margin-right: 8px;
+    margin-left: 5px;
+    height: 100%;
+    width: 100%;
+    max-height: 134px;
+    margin-bottom: 20px;
+}
+
+.div-criar-podcast div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    margin-left: 5px;
+    padding: 16px 20px;
+    width: 100%;
+    max-height: 134px;
+    max-width: 400px;
+}
+
+.div-criar-podcast button a{
+    color: black;
+    font-family: 'Nunito';
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+.div-criar-podcast button{
+    width: 100%;
+    max-width: 120px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px;
+    justify-content: center;
+    border: none;
+
+}
+
 .botao-podcast{
     width: 100%;
     min-width: 150px;
@@ -531,4 +575,54 @@ body::-webkit-scrollbar {
 .nav-nav-titulo{
     font-weight: 600;
 
+}
+@media (max-width: 1600px) {
+
+    .div-criar-biblioteca div{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        background-color: #1F1F1F;
+        border-radius: 10px;
+        margin-left: 5px;
+        padding: 16px 20px;
+        width: 100%;
+        max-height: 134px;
+        max-width: 330px;
+    }
+ 
+    .div-criar-podcast{
+        max-height: 134px; 
+    }
+    
+    .div-criar-podcast div{
+        max-width: 330px;
+    }
+}
+
+.tocando-agora-img{
+    width: 100%;
+    max-width: 56px;
+    border-radius:5px;
+}
+
+.info1-barra-play{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+.musica-artista-play p{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+   
+}
+
+.music-bar-play{
+    font-size: 12px;
+}
+
+.artist-play-bar{
+    font-size: 10px;
+    opacity: 0.5;
 }
